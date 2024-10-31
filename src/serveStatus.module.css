@@ -1,0 +1,61 @@
+.statusList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* .serveStatusView {
+  margin-left: 50vw;
+} */
+.serveStatusView h1 {
+  font-family: "iroha-30momiji-stdn", sans-serif;
+}
+.serveStatusView p {
+  font-family: "iroha-30momiji-stdn", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+  border-radius: 10px;
+  margin: 10px;
+  /* background-color: #f0f0f0; */
+}
+.elementName {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.status {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+/* 
+.statusList{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+@media (max-width: 600px) {
+  .serveStatusView {
+    margin: 0 10px;
+    /* background-color: white; */
+  }
+  .statusList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* バーナー用 */
+.serveStatusView_banner {
+  display: block;
+  height: 30px;
+  width: 100%;
+  background-color: orange;
+  overflow: hidden;
+}
